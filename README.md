@@ -1,0 +1,2 @@
+# simple
+simple java project
