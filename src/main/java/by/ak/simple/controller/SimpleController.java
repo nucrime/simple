@@ -14,6 +14,7 @@ public class SimpleController {
     @GetMapping("/{token}")
     public String talkToBot(@PathVariable String token) {
         telegramPollingService.poll(token);
-        return "[SIMPLE] Successfully started polling";
+        return "[SIMPLE] Successfully started polling...";
+        // todo add thymeleaf template and js&jquery
     }
 }

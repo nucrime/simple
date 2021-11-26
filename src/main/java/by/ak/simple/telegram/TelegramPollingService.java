@@ -30,6 +30,7 @@ public class TelegramPollingService {
                 String messageText = updates.get(i).message().text();
                 String chatId = updates.get(i).message().chat().id().toString();
                 if (messageText.equals("/start")) {
+                    // todo consider to use a template
                     sendTextMessage(chatId, message.messageId(), "Hi there!");
                 }
             });
