@@ -1,9 +1,9 @@
-package by.ak.simple;
+package by.ak.simple.db;
 
-import by.ak.simple.model.Customer;
-import by.ak.simple.model.Order;
-import by.ak.simple.repository.CustomerRepository;
-import by.ak.simple.repository.OrderRepository;
+import by.ak.simple.customer.Customer;
+import by.ak.simple.order.Order;
+import by.ak.simple.customer.CustomerRepository;
+import by.ak.simple.order.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.bytebuddy.utility.RandomString;
@@ -38,6 +38,8 @@ public class JpaAppDbRunner implements ApplicationRunner {
                             .id(i)
                             .firstName(RandomString.make(10))
                             .lastName(RandomString.make(10))
+                            .address(RandomString.make(10))
+                            .email(RandomString.make(10))
                             .build());
                 });
         log.info("[SIMPLE] Populating Order table");
