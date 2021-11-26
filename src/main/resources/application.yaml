@@ -5,6 +5,5 @@ spring:
     generate-ddl: on
     properties:
       hibernate:
-        show_sql: true
         jdbc:
           batch_size: 20
