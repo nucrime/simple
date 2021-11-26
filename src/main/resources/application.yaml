@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1
+  jpa:
+    generate-ddl: on
+    properties:
+      hibernate:
+        show_sql: true
+        jdbc:
+          batch_size: 20
