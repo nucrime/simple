@@ -1,5 +1,6 @@
-package by.ak.simple.model;
+package by.ak.simple.customer;
 
+import by.ak.simple.order.Order;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

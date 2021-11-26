@@ -1,4 +1,4 @@
-package by.ak.simple.model;
+package by.ak.simple.order;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
