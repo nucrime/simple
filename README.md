@@ -1,4 +1,4 @@
-# Simple java project
+# Simple java project with Telegram API included
 
 This example uses Spring Boot. Java framework.
 
